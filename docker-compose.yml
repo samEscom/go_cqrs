@@ -1,0 +1,18 @@
+services:
+  db:
+    build: ./deploy/local
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: mydb
+      POSTGRES_PASSWORD: secret
+    ports:
+      - 5432:5432
+
+  db-testing:
+    build: ./deploy/local
+    environment:
+      POSTGRES_DB: testing
+      POSTGRES_PASSWORD: secret
+      POSTGRES_USER: postgres
+    ports:
+      - 5432:5432

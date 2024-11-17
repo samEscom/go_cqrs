@@ -1,0 +1,41 @@
+# Go
+#
+# Compiled object files
+*.o
+*.a
+
+# Executables
+*.exe
+*.out
+*.dll
+*.so
+
+# Test coverage reports
+coverage.txt
+*.coverprofile
+
+# Compiled output
+bin/
+dist/
+
+# Output of the go coverage tool
+cover.out
+
+# Dependency directories
+vendor/
+
+# OS specific files
+.DS_Store
+
+# IDE-specific files
+.idea/
+*.iml
+
+# Configuration files
+config.yaml
+.env
+
+# Generated code
+proto/
+
+go.sum
