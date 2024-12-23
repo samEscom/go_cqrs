@@ -13,3 +13,8 @@ WORKDIR /src
 RUN cd /src
 RUN go mod download
 
+RUN go install ./...
+
+FROM alpine:3.11
+WORKDIR /usr/bin
+COPY --from=builder /go/bin .
